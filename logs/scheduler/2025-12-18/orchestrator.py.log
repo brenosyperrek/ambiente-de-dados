@@ -4647,3 +4647,10 @@
 [2025-12-18T18:49:34.170+0000] {logging_mixin.py:190} INFO - [2025-12-18T18:49:34.170+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-12-18T18:49:34.183+0000] {logging_mixin.py:190} INFO - [2025-12-18T18:49:34.183+0000] {dag.py:4180} INFO - Setting next_dagrun for weather_api_dbt_orchestrator to 2025-01-01 06:40:00+00:00, run_after=2025-01-01 06:45:00+00:00
 [2025-12-18T18:49:34.194+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/orchestrator.py took 0.057 seconds
+[2025-12-18T18:50:04.290+0000] {processor.py:186} INFO - Started process (PID=712) to work on /opt/airflow/dags/orchestrator.py
+[2025-12-18T18:50:04.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/orchestrator.py for tasks to queue
+[2025-12-18T18:50:04.293+0000] {logging_mixin.py:190} INFO - [2025-12-18T18:50:04.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/orchestrator.py
+[2025-12-18T18:50:04.304+0000] {processor.py:925} INFO - DAG(s) 'weather_api_dbt_orchestrator' retrieved from /opt/airflow/dags/orchestrator.py
+[2025-12-18T18:50:04.325+0000] {logging_mixin.py:190} INFO - [2025-12-18T18:50:04.325+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-12-18T18:50:04.340+0000] {logging_mixin.py:190} INFO - [2025-12-18T18:50:04.340+0000] {dag.py:4180} INFO - Setting next_dagrun for weather_api_dbt_orchestrator to 2025-01-01 06:40:00+00:00, run_after=2025-01-01 06:45:00+00:00
+[2025-12-18T18:50:04.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/orchestrator.py took 0.067 seconds
