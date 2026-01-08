@@ -1,5 +1,19 @@
 # DOCKER COMPOSE
 services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"   # Edge / Agent
+      - "9443:9443"   # HTTPS (recomendado)
+      # - "9000:9000" # HTTP (opcional, evite em produção)
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
   postgres:
     image: postgres:15
     container_name: pg_data
@@ -196,3 +210,4 @@ services:
 volumes:
   pg_data:
   pgadmin_data:
+  portainer_data:
